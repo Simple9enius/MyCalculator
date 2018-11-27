@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/input_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textDirection="rtl"
+            android:textColor="#000000"
+            android:text="0"/>
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:orientation="horizontal" >
+            <Button android:text="1"
+                android:onClick="one"/>
+            <Button android:text="2"
+                android:onClick="two"/>
+            <Button android:text="3"
+                android:onClick="three"/>
+            <Button android:text="back"
+                android:onClick="backspace"/>
+            <Button android:text="4"
+                android:onClick="four"/>
+            <Button android:text="5"
+                android:onClick="five"/>
+            <Button android:text="6"
+                android:onClick="six"/>
+            <Button android:text="-"
+                android:onClick="minus"/>
+            <Button android:text="7"
+                android:onClick="seven"/>
+            <Button android:text="8"
+                android:onClick="eight"/>
+            <Button android:text="9"
+                android:onClick="nine"/>
+            <Button android:text="+"
+                android:onClick="plus"/>
+            <Button android:text="."
+                android:onClick="dot"/>
+            <Button android:text="0"
+                android:onClick="zero"/>
+            <Button android:text="pow"
+                android:onClick="pow"/>
+            <Button android:text="*"
+                android:onClick="multiply"/>
+            <Button android:text="("
+                android:onClick="openBrackets"/>
+            <Button android:text="sqrt"
+                android:onClick="sqrt"/>
+            <Button android:text="cos"
+                android:onClick="cos"/>
+            <Button android:text="/"
+                android:onClick="divide"/>
+            <Button android:text=")"
+                android:onClick="closeBrackets"/>
+            <Button android:text="sin"
+                android:onClick="sin"/>
+            <Button android:text="ln"
+                android:onClick="ln"/>
+            <Button android:text="="
+                android:onClick="result"/>
+            <Button android:text="CLEAR"
+                android:onClick="clear"/>
+        </GridLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
